@@ -1,15 +1,15 @@
 1. Input Data:
     -  Read images (like test_code_screenshot.png, test_frontend_screenshot.png, and test_terminal_screenshot.png)
-       and a general prompt,then encoded them to base64 to simulate user input.
+       and a general prompt.
 2. Process Code Screenshot:
     -  Have process_input() to decode base64 image, save it temporarily, and then call debug_code_from_image().
-	  -  debug_code_from_image() should extract text from the image using OCR and then debug this text using the GPT-2
+    -  Function debug_code_from_image() should extract text from the image using OCR and then debug this text using the GPT-2
        model, returning the debugged code.
 3. Process Frontend Screenshot:
-	  -  Similarly, process_input() should handle a frontend screenshot by calling generate_frontend_code_from_image(),
+    -  Similarly, process_input() should handle a frontend screenshot by calling generate_frontend_code_from_image(),
        which generates descriptive captions from the image and converts these into code snippets.
 4. Process Terminal Screenshot:
-	  -  analyze_terminal_screenshot() should extract text from the image and use generate_response() to generate a
+    -  Function analyze_terminal_screenshot() should extract text from the image and use generate_response() to generate a
        helpful analysis or resolution based on the terminal output.
 5. Process General Prompt:
-	  -  For general prompts, the generate_response() function should generate a relevant response using the GPT-2 model.
+    -  For general prompts, the generate_response() function should generate a relevant response using the GPT-2 model.
