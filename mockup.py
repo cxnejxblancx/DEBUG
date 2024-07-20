@@ -29,7 +29,7 @@ limiter.init_app(app)
 logging.basicConfig(level=logging.INFO)
 
 # Load pre-trained TensorFlow models (frontend)
-image_captioning_model_url = "https://tfhub.dev/tensorflow/tf2-preview/generator/1" # PLACEHOLDER URL for image captioning model (translating frontend ss to code) --> REVIEW
+image_captioning_model_url = "https://tfhub.dev/tensorflow/tf2-preview/generator/1"
 try:
     image_captioning_model = hub.load(image_captioning_model_url)
 except Exception as e:
